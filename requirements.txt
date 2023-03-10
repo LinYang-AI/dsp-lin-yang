@@ -1,4 +1,2 @@
+notebook == 1.0.0 
 flake == 6.0.0
-mccabe == 0.7.0
-pycodestyle == 2.10.0
-pyflakes == 3.0.1    
