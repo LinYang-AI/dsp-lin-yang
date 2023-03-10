@@ -1,0 +1,4 @@
+flake == 6.0.0
+notebook == 1.0.0 
+numpy == 1.24.2
+matplotlib == 3.7.0
