@@ -11,7 +11,7 @@ import numpy as np
 from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.metrics import mean_squared_error
 from sklearn.metrics import mean_squared_log_error
-from .preprocess import preprocessing
+from preprocess import preprocessing
 
 # class build_model():
 #     def __init__(self, X_train, y_train, learning_rate=0.1,
