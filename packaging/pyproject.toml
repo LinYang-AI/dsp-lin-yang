@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "house_price_modeling_Lin_Yang"
+version = "0.0.1"
+author = [
+    {name = "house_price_modeling", email = "lin.yang@epita.fr"},
+]
+description = "A small project for learning packaging a python library"
+readme = "README.md"
+requires-python = ">=3.9.16"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/LinYang-AI/dsp-lin-yang/tree/main/packaging"
+"Bug Tracker" = "https://github.com/LinYang-AI/dsp-lin-yang/tree/main/packaging/issues"
