@@ -89,3 +89,9 @@ def preprocessing(data_df: pd.DataFrame, training_mode: bool = True) -> list:
     else:
         data_encoded.replace(np.nan, 0, inplace=True)
         return data_encoded
+
+    """
+    function for unitest
+    """
+# def divide(a, b):
+#     return a / b
