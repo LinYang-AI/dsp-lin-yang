@@ -1,7 +1,7 @@
 import joblib
 import numpy as np
 import pandas as pd
-from .preprocess import preprocessing
+from preprocess import preprocessing
 
 ROOT = '../'
 MODELS_DIR = ROOT + 'models'

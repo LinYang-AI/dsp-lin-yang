@@ -8,11 +8,14 @@ Returns:
 """
 import pandas as pd
 import numpy as np
+import joblib
 from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.metrics import mean_squared_error
 from sklearn.metrics import mean_squared_log_error
-from .preprocess import preprocessing
+from preprocess import preprocessing
 
+ROOT = '../'
+MODELS_DIR = ROOT + 'models.jblib'
 
 def compute_rmsle(y_test: np.ndarray, y_pred:
                   np.ndarray, precision: int = 2) -> float:
@@ -32,7 +35,8 @@ def build_model(data_df: pd.DataFrame) -> dict:
                                       random_state=42)
     # train model
     model.fit(X_train, y_train)
-
+    # save model
+    joblib.dump(model, MODELS_DIR)
     y_pred = model.predict(X_test)
     mse = mean_squared_error(y_test, y_pred)
     rmsle = compute_rmsle(y_test, y_pred)
